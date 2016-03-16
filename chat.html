@@ -1,0 +1,55 @@
+<html>
+	<head>
+	    <title>
+            Chat Room
+        </title>
+        <style type="text/css">
+          .header {
+          color: black;
+          background-color: green;
+          font-size: 40px;
+          text-align: center;
+  }
+ 
+        </style>
+<script src="jquery-1.12.1.min.js"></script>
+<script src="chat.js"></script>
+</head>
+<body>
+
+  <div class="header"> Chat Room </div><br />
+  	<div>
+  	<div>
+  		
+    	<table border = 0>
+    	<tr valign = "top" align = "center">
+    		<td>
+    			<select id="rooms" name="rooms" size = "10" style="width: 300px;">
+    			</select>
+    		</td>
+    		<td>
+    			
+    			<button id="join">join</button></br></br></br></br></br></br></br>
+    			<button id="leave">leave</button>
+    		</td>
+    		<td>
+    			<select id="users" name="users" size = "10" style="width: 300px;">
+    			</select>
+    		</td>
+    		
+    	</tr>
+    	</table>
+    	
+    	
+    </div></br>
+
+     <div>Username: <input type="text" id="from" />&nbsp;&nbsp;&nbsp<button id="login">log in</button>
+     				&nbsp;&nbsp;&nbsp<button id="logout">log out</button></div></br> 				
+     <div>Send to:&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" id="rcpt"/></div></br>
+	 <div>message:&nbsp;&nbsp;&nbsp;<input type="text" id="input" size="60"/><button onclick="send();">send</button></div></br>
+     <div><textarea id="box" readonly="readonly" disabled="disabled" rows=20 cols=80>
+    
+    </textarea></div>
+  </div>
+    </body>
+</html>
